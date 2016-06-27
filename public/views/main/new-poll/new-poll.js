@@ -10,7 +10,7 @@ angular.module('pollApp')
 				$scope.poll.options.splice(index, 1);
 		};
 		$scope.add_new_option = function() {
-			if ($scope.poll.options.length < 10)
+			if ($scope.poll.options.length < 4)
 				$scope.poll.options.push('');
 		};
 		$scope.submit_poll_create = function() {
