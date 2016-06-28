@@ -4,5 +4,10 @@ angular.module('pollApp')
 		$scope.open_poll = function (id) {
 			$state.go('main.show_poll', {id: id});
 		};
-	
+	$scope.deletePoll = function(id){
+          Poll.delete({ id: id }, function(response) {
+             $scope.polls = Poll.query();
+           });
+    };
+
 	});
