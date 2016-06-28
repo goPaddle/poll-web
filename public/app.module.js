@@ -4,4 +4,4 @@ var app = angular.module('pollApp', [
 	'angular-storage',
 	'angular-jwt'
 ]);
-app.value('RESTApiPath', 'http://65.52.156.213:30222/api');
+app.value('RESTApiPath', 'http://40.114.223.139:30222/api');
