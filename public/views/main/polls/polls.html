@@ -12,7 +12,7 @@
 			<div ng-repeat='poll in polls'>
 				<div class='row'>
 					<div class='col-xs-12 centered'>
-						<p><a href='#' ng-click='open_poll(poll.id)'>{{poll.question}}</a>
+						<p><a href='#' ng-click='open_poll(poll.id)'>{{poll.question}}</a><span><a href="" ng-click="deletePoll(poll.id)" ><img src="http://findicons.com/files/icons/2139/uidesign/16/delete.png"></img></a></span>
 						</p>
 					</div>
 				</div>
